@@ -1,0 +1,22 @@
+while True:
+    user_name= input("Please enter a username")
+    password= input("please enter a password")
+  
+    a = user_name.isalnum()  
+    b = user_name.isidentifier() 
+    c = len(password) 
+    d = password.isalnum() 
+    e = password.islower() 
+    f = password.isupper()
+    g = password.find(" ")
+ 
+ 
+    
+    if a and b and c==8 and d and g == -1 and not e and not f :
+        print("Valid username and password")
+        break
+    else:
+        print("Invalid username or password, please enter again.")
+    
+
+ 
